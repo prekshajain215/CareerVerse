@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    min-height:100vh;
+    background:#050816;
+    overflow:hidden;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero{
+    position:relative;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    text-align:center;
+
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+  h1{
+    font-size: 6.5rem;
+    color:#bbb9e8;
+    text-shadow:0 0 10px rgba(139,132,255,0.35);
+}
+
+p{
+    color:rgba(255,255,255,0.85);
+    font-size:1.4rem;
+}
+
+button{
+    margin-top:10px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#00D4FF;
+    font-size:1.1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(0,212,255,0.6);
+}
+
+.stars{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 2px, transparent 2px);
+
+    background-size:
+    100px 100px,
+    150px 150px,
+    200px 200px;
+
+    animation: moveStars 40s linear infinite;
+}
+
+@keyframes moveStars{
+    from{
+        background-position:
+            0 0,
+            0 0,
+            0 0;
+    }
+
+    to{
+        background-position:
+            0 -500px,
+            0 -500px,
+            0 -500px;
+    }
+}
+

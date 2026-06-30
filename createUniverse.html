@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerVerse</title>
+    <link rel="stylesheet" href="createUniverse.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="universe-card">
+
+```
+<h1 class="title">CareerVerse</h1>
+
+<p class="subtitle">
+    Build Your Career Galaxy 🚀
+</p>
+
+<p id="planetCount">
+    0 Planet(s) Created
+</p>
+
+<input
+    type="text"
+    id="userName"
+    placeholder="Enter Your Name">
+
+<div class="planet-section">
+
+    <label>Planet Name</label>
+
+    <input
+        type="text"
+        id="planetName"
+        placeholder="e.g. Web Dev">
+
+    <label>Choose Planet Color</label>
+
+    <div class="color-picker">
+
+        <input
+            type="color"
+            id="planetColor">
+    </div>
+
+    <small>
+        This color will represent your planet
+    </small>
+
+    <button id="addPlanet">
+        Add Planet
+    </button>
+
+</div>
+
+<p id="message"></p>
+
+<div class="universe-preview">
+
+    <h3>Your Universe</h3>
+
+    <div id="planetList"></div>
+
+</div>
+
+<button
+    id="createUniverse"
+    class="launch-btn">
+
+    Launch Universe 🚀
+
+</button>
+```
+
+</div>
+
+<script src="createUniverse.js"></script>
+
+</body>
+</html>

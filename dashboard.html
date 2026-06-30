@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerVerse Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="universe">
+
+    <h1 class="title">
+        CareerVerse
+    </h1>
+
+    <div class="info-panel"></div>
+
+    <div class="skill-form">
+        <h3>➕ Add New Skill</h3>
+        <input
+        type="text"
+        id="skillInput"
+        placeholder="Enter Skill or Project">
+
+        <select id="skillCategory"></select>
+
+        <button id="addSkill">
+            Add Skill
+        </button>
+
+    </div>
+
+    <div class="sun">
+
+        <h2 id="username"></h2>
+
+        <p id="level"></p>
+
+        <p id="xp"></p>
+
+        <div class="progress-bar">
+
+            <div id="progress"></div>
+
+        </div>
+
+        <div id="levelPopup"></div>
+
+        <div id="xpPopup"></div>
+
+    </div>
+
+    <div id="orbitContainer"></div>
+
+</div>
+
+<div id="skillMessage"></div>
+
+<script src="dashboard.js"></script>
+
+</body>
